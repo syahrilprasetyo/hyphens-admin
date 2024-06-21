@@ -1,0 +1,25 @@
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+input:checked + .slider {
+  @apply bg-blue-500;
+}
+
+input:focus + .slider {
+  @apply shadow-outline-blue;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  @apply rounded-full;
+}
+
+.slider.round:before {
+  @apply rounded-full;
+}
